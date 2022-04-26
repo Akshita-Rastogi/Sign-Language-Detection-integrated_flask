@@ -65,7 +65,7 @@ class VideoCameraMotion(object):
     new_model.load_weights('path_to_my_weights2')
    
     def __init__(self):
-        self.video = cv2.VideoCapture(0)
+        self.video = cv2.VideoCapture(-1)
         self.video.set(cv2.CAP_PROP_FRAME_WIDTH,1280)
         self.video.set(cv2.CAP_PROP_FRAME_HEIGHT,720)
         self.to_predict = []
